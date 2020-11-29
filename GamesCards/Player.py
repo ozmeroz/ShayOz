@@ -5,6 +5,7 @@ class Player:
         self.mainpack=mainpack
         self.name=name
         self.playerPack=[]
+        self.number_of_cards=number_of_cards
 
 
     def set_hand(self):
