@@ -5,7 +5,7 @@ class Player:
         self.mainpack=mainpack
         self.name=name
         self.playerPack=[]
-        self.set_hand()
+
 
     def set_hand(self):
         self.playerPack = []
