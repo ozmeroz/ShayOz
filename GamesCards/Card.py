@@ -1,4 +1,5 @@
 class Card:
+    'מחלקה המייצגת קלף במשחק קלפים'
     # 1=ace , 2-10 = numbers , 11=jack,12=queen,13=king
     # 1=diamond , 2 = spade , 3= heart , 4=club
     def __init__(self,value,suit):

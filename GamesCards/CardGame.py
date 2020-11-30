@@ -2,6 +2,7 @@ from GamesCards.Player import *
 from GamesCards.DeckOfCards import *
 from GamesCards.Card import *
 class CardGame:
+    'מחלקה המייצגת משחק, כוללת חפיסת קלפים אחת ושני שחקנים'
     def __init__(self, cards_to_player=10):
         self.mainPack=DecksOfCards()
         self.cards_to_player=cards_to_player

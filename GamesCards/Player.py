@@ -1,6 +1,7 @@
 from GamesCards.DeckOfCards import *
 from GamesCards.Card import *
 class Player:
+    'מחלקה המייצגת שחקן במשחק קלפים, לכל שחקן יש שם וחבילת קלפים. מספר הקלפים יקבע בעת תחילת משחק חדש ויהיה 10 כברירת מחדל'
     def __init__(self, mainpack, name,number_of_cards=10):
         self.mainpack=mainpack
         self.name=name
