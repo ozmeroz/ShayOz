@@ -15,7 +15,8 @@ class Player:
         for i in range(0, self.number_of_cards):
             self.playerPack.append(self.mainpack.deal_one())
     def get_card(self):
-        card=self.playerPack.deal_one()
+        i=randint(0,len(self.playerPack)-1)
+        card=self.playerPack.pop(i)
         return card
 
     def add_card(self, card):

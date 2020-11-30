@@ -6,7 +6,8 @@ class Card:
         self.suit=suit
 
 
-    def __eq__(self, other):
+    # def __eq__(self, other):
+    def compare(self,other):
         if self.value==1 and other.value != 1:
             return self
         if self.value != 1 and other.value ==1 :
