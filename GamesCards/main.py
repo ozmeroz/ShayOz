@@ -22,4 +22,7 @@ for i in range(10):
         print(f"Winner: {game.player2.name}")
 game.player1.show()
 game.player2.show()
-print(f"The winner is : {game.get_winner().name}!!!")
+if game.get_winner()!=None:
+    print(f"The winner is : {game.get_winner().name}!!!")
+else:
+    print("There is no Winners! \nThe game ended in draw!")
