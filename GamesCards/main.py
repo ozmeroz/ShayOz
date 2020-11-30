@@ -25,4 +25,4 @@ game.player2.show()
 if game.get_winner()!=None:
     print(f"The winner is : {game.get_winner().name}!!!")
 else:
-    print("There is no Winners! \nThe game ended in draw!")
+    print("There is no Winners, Just loosers! \nThe game ended in draw!")
