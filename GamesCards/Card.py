@@ -24,22 +24,22 @@ class Card:
 
     def __repr__(self): #יצירת פונקצית הדפסה
         if self.value==13: # בדיקה האם הקלף שווה ל13
-            v="King" # אם כן , הקלף יודפס כKing
+            v="K" # אם כן , הקלף יודפס כKing
         elif self.value==12: # בדיקה האם הקלף שווה ל12
-            v="Queen" # אם כן , הקלף יודפס כQueen
+            v="Q" # אם כן , הקלף יודפס כQueen
         elif self.value==11: # בדיקה האם הקלף שווה ל11
-            v="Jack" # אם כן , הקלף יודפס כJack
+            v="J" # אם כן , הקלף יודפס כJack
         elif self.value==1: # בדיקה האם הקלף שווה ל1
-            v="Ace" # אם כן , הקלף יודפס כAce
+            v="A" # אם כן , הקלף יודפס כAce
         else: # אם הקלף אינו שווה לאחד מהערכים הנ"ל
             v=str(self.value) # הקלף יודפב בערכו
         if self.suit==1:# בדיקה האם הsuit שווה ל1
-            s="Diamond" # אם כן,הקלף יודפס כDiamond
+            s="♦" # אם כן,הקלף יודפס כDiamond
         if self.suit==2:# בדיקה האם הsuit שווה ל2
-            s = "Spade" # אם כן,הקלף יודפס כSpade
+            s = "♠" # אם כן,הקלף יודפס כSpade
         if self.suit==3:# בדיקה האם הsuit שווה ל3
-            s="Heart" # אם כן,הקלף יודפס כHeart
+            s="♥" # אם כן,הקלף יודפס כHeart
         if self.suit==4:# בדיקה האם הsuit שווה ל4
-            s="Club" # אם כן,הקלף יודפס כClub
+            s="♣" # אם כן,הקלף יודפס כClub
         return (f"{v}:{s}") # הדפסת הקלף לפי הערכים שנקבעו בפונקציה הנ"ל לפי משתנים v ן- s
 
