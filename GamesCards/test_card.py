@@ -16,7 +16,7 @@ class TestCard(TestCase):
 
 
     def test_compare(self):
-        self.assertIn("Invalid", self.c7.compare(self.c6))
+        self.assertIn("Invalid",self.c7.compare(self.c6))
         self.assertIn("Invalid", self.c6.compare(self.c7))
         self.assertIn("Invalid", self.c8.compare(self.c6))
         self.assertIn("Invalid", self.c6.compare(self.c8))
@@ -27,9 +27,12 @@ class TestCard(TestCase):
         self.assertEqual(self.c5.compare(self.c1),self.c1) # בודקת האם הפונקציה מחזירה את הקלף עם הערך הגדול יותר
         self.assertEqual(self.c1.compare(self.c5), self.c1) # בודקת האם הפונקציה מחזירה את הקלף עם הערך הגדול יותר ללא תלות במי הקלף הראשון ומי השני
         self.assertEqual(self.c2.compare(self.c6), self.c6) # בודקת שכאשר שני הקלפים שווים לAce הפונקציה תחזיר את הAce עם הsuit הגדול יותר
-        # with self.assertRaises(AttributeError):
-        #     self.c1.compare(self.c7)
-        # self.assertEqual(self.c5.compare(self.c7), TypeError)
+
+
+
+
+
+
 
 
 
