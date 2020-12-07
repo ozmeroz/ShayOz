@@ -7,8 +7,8 @@ class CardGame:
         self.mainPack=DecksOfCards()
         self.cards_to_player=cards_to_player
 
-        self.player1 = Player(self.mainPack, self.cards_to_player)
-        self.player2 = Player(self.mainPack, self.cards_to_player)
+        self.player1 = Player(self.mainPack,"Shay", self.cards_to_player)
+        self.player2 = Player(self.mainPack,"Oz", self.cards_to_player)
         self.new_game()
 
 

@@ -1,5 +1,4 @@
 from unittest import TestCase
-import GamesCards
 from GamesCards.Player import Player
 from GamesCards.DeckOfCards import DecksOfCards
 from GamesCards.Card import Card
@@ -7,7 +6,7 @@ from unittest import mock
 class TestPlayer(TestCase):
     def setUp(self):
         self.deck=DecksOfCards()
-        self.player1=Player(self.deck,30)
+        self.player1=Player(self.deck,"Shay",30)
 
 
     def test__init__(self):
@@ -29,7 +28,7 @@ class TestPlayer(TestCase):
     def test_get_card(self):
         self.assertIsNone(self.player1.get_card()) # קריאה לפונקציה ובדיקה האם היא מחזירה None כאשר אין לשחקן קלפים
         self.player1.set_hand() # חלוקת קלפים לשחקן
-        newPlayer=Player(self.deck) # יצירת שחקן חדש בלי קלפים
+        newPlayer=Player(self.deck,"Oz") # יצירת שחקן חדש בלי קלפים
         newcard=Card(10,2) # הכנה של קלף יחיד לצורך בדיקה
         newPlayer.add_card(newcard) #הכנסה של קלף יחיד לשחקן
         self.assertIs(newPlayer.get_card(), newcard) #בדיקה האם הקלף שנמשך הוא הקלף שהכנסו
