@@ -17,9 +17,13 @@ class Player:
             self.playerPack.append(self.mainpack.deal_one())
 
     def get_card(self): # פונקציה שמושכת קלף אקראי מהשחקן והערך המוחזר שלה הוא הקלף שנמשך
-        i=randint(0,len(self.playerPack)-1) # הגרלה של אינדקס למשיכה מתוך רשימת הקלפים של השחקן
-        card=self.playerPack.pop(i) # משיכת הקלף באינדקס שהוגרל
-        return card
+        'במקרה שנמשך קלף משחקן בעל חפיסת קלפים ריקה מחזירה None'
+        if(len(self.playerPack)<=0):
+            return None
+        else:
+            i=randint(0,len(self.playerPack)-1) # הגרלה של אינדקס למשיכה מתוך רשימת הקלפים של השחקן
+            card=self.playerPack.pop(i) # משיכת הקלף באינדקס שהוגרל
+            return card
 
     def add_card(self, card): # פונקציה שמקבלת קלף ומוסיפה אותו לשחקן
         self.playerPack.append(card)
