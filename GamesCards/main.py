@@ -2,6 +2,7 @@ from GamesCards.Player import *
 from GamesCards.DeckOfCards import *
 from GamesCards.Card import *
 from GamesCards.CardGame import *
+import time
 
 game=CardGame()
 game.player1.show()
@@ -20,6 +21,7 @@ for i in range(10):
         game.player1.add_card(card1)
         game.player1.add_card(card2)
         print(f"This round Winner is : {game.player2.name}\n")
+    time.sleep(2)
 game.player1.show()
 game.player2.show()
 if game.get_winner()!=None:
