@@ -16,7 +16,7 @@ class CardGame:
         'מתודה שתערבב את החפיסה מחדש ומחלקת קלפים לשחקנים. אם המתודה תיקרא מסיבה כל שהיא לאחר שהמשחק החל היא מדפיסה הודעה שהמשחק כבר החל ולא עושה כלום'
         if self.player1.playerPack!=[]: # בדיקה האם המשחק כבר החל והפונקציה נקראה לא במקום
             print("Game already started!")
-            return
+            return None
         self.mainPack.packShuffle() # ערבוב החפיסה הראשית
         self.player1.set_hand() #קריאה לפונקציה שמחלקת חבילת קלפים לשחקן הראשון
         self.player2.set_hand() # קריאה לפונקציה שמחלקת חבילת קלפים לשחקן השני
