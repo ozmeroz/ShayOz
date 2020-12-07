@@ -25,6 +25,7 @@ class Player:
             card=self.playerPack.pop(i) # משיכת הקלף באינדקס שהוגרל
             return card
 
+
     def add_card(self, card): # פונקציה שמקבלת קלף ומוסיפה אותו לשחקן
         self.playerPack.append(card)
 
