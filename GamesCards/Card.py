@@ -3,8 +3,13 @@ class Card:
     # 1=ace , 2-10 = numbers , 11=jack,12=queen,13=king
     # 1=diamond , 2 = spade , 3= heart , 4=club
     def __init__(self,value,suit): # יצירת consrtuctor לclass
+        if(value>13 or value<1):
+            raise value("Dont have such value of card")
+        if (suit>4 or suit<1):
+            raise value("Dont have such suit of card")
         self.value=value
         self.suit=suit
+
 
 
     def compare(self,other):  #יצירת פונקציית compare אשר מטרתה להשוות בין שני קלפים ולהחזיר את הקלף הגדול ביותר
@@ -16,7 +21,7 @@ class Card:
             if self.suit>other.suit: # אם כן, בודקת האם suit של הקלף הראשון גדול מהsuit של הקלף השני
                 return self # אם כן, הפונקציה תחזיר את הקלף הראשון
             else : # אם לא
-                return other # הפונקציה תחזיראת הקלף השני
+                return other # הפונקציה תחזיר את הקלף השני
         if self.value > other.value: # בודקת האם הקלף הראשון גדול מהקלף השני
             return self # אם כן, הפונקציה תחזיר את הקלף הראשון
         else: # אם לא
