@@ -9,6 +9,7 @@ game.player1.show() #הדפסת שחקן
 game.player2.show() #הדפסת שחקן
 game.new_game() # בדיקת קריאה לפונקציה new_game לאחר שהמשחק כבר החל
 for i in range(10):
+
     card1=game.player1.get_card()
     card2=game.player2.get_card()
     print(f"{game.player1.name}-{card1}")

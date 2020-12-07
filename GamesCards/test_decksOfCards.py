@@ -21,5 +21,8 @@ class TestDecksOfCards(TestCase):
         self.d.deal_one() # הוצאה של קלף מהחבילה
         self.assertEqual(len(self.d.pack), 51) # בדיקה האם אורך הליסט קטן לאחר הוצאה של קלף
 
+    def test_deal_one_chosenCardType(self):
+        self.assertTrue(type(self.d.deal_one())==Card) # בדיקה האם הערך המוחזר הוא אובייקט מסוג Card
+
 
 

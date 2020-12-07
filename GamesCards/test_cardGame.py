@@ -11,7 +11,6 @@ class TestCardGame(TestCase):
 
 
     def test___init__(self):
-
         self.assertEqual(self.cardGame.cards_to_player, 10) # בדיקה האם הערך הדיפולטיבי של מספר קלפים לשחקן עבד והוגדר כ10
         self.assertEqual(self.cardGame2.cards_to_player, 20) # בדיקה האם הערך של מספר קלפים לשחקן עבד כאשר התקבל כערך ביצירת משחק
         self.assertEqual(len(self.cardGame2.player1.playerPack), 20) # בדיקה האם נוצרה לשחקן חפיסת קלפים באורך שהתקבל בעת יצירת משחק
