@@ -2,8 +2,11 @@ from GamesCards.DeckOfCards import *
 from GamesCards.Card import *
 class Player:
     'מחלקה המייצגת שחקן במשחק קלפים, לכל שחקן יש שם וחבילת קלפים. מספר הקלפים יקבע בעת תחילת משחק חדש ויהיה 10 כברירת מחדל'
-    def __init__(self, mainpack, name,number_of_cards=10): # constructor
+    def __init__(self, mainpack,number_of_cards=10): # constructor
         self.mainpack=mainpack
+        name=input("Enter name of player:")
+        while not name.isalpha():
+            name = input("This name is not valid , please enter a valid name: ")
         self.name=name
         self.playerPack=[]
         self.number_of_cards=number_of_cards

@@ -21,3 +21,5 @@ class TestDecksOfCards(TestCase):
         self.d.deal_one() # הוצאה של קלף מהחבילה
         self.assertEqual(len(self.d.pack), 51) # בדיקה האם אורך הליסט קטן לאחר הוצאה של קלף
 
+
+
