@@ -5,9 +5,9 @@ from GamesCards.CardGame import *
 import time
 
 game=CardGame()
-game.player1.show()
-game.player2.show()
-game.new_game()
+game.player1.show() #הדפסת שחקן
+game.player2.show() #הדפסת שחקן
+game.new_game() # בדיקת קריאה לפונקציה new_game לאחר שהמשחק כבר החל
 for i in range(10):
     card1=game.player1.get_card()
     card2=game.player2.get_card()
