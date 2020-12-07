@@ -27,9 +27,3 @@ class DecksOfCards:
     def show(self): # פונקציה שמדפיסה את כל הקלפים בחפיסה
         for i in self.pack:
             print(i)
-
-
-
-
-
-

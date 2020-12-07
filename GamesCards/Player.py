@@ -34,4 +34,3 @@ class Player:
 
     def show(self): # פונקציה שמציגה את פרטי השחקן - שם וקלפים שיש בידו
         print(f"{self.name}: {self.playerPack}")
-
