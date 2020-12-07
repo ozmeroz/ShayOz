@@ -25,4 +25,3 @@ class TestDecksOfCards(TestCase):
         self.assertTrue(type(self.d.deal_one())==Card) # בדיקה האם הערך המוחזר הוא אובייקט מסוג Card
 
 
-
