@@ -1,12 +1,19 @@
 from GamesCards.DeckOfCards import *
-from GamesCards.Card import *
+from GamesCards.Card import Card
 class Player:
     'מחלקה המייצגת שחקן במשחק קלפים, לכל שחקן יש שם וחבילת קלפים. מספר הקלפים יקבע בעת תחילת משחק חדש ויהיה 10 כברירת מחדל'
     def __init__(self, mainpack,name,number_of_cards=10): # constructor
         self.mainpack=mainpack
-        self.name=name
+        if type(name) == str and name!='':
+            self.name = name
+        else:
+            raise ValueError('Name value is not string!')
+        if number_of_cards <= 0:
+            raise ValueError('Number of cards invalid!')
+        else:
+            self.number_of_cards = number_of_cards
         self.playerPack=[]
-        self.number_of_cards=number_of_cards
+
 
 
     def set_hand(self): # פונקציה שמחלקת חבילת קלפים חדשה ואקראית עבור השחקן

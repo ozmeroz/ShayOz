@@ -8,6 +8,21 @@ class TestPlayer(TestCase):
         self.deck=DecksOfCards()
         self.player1=Player(self.deck,"Shay",30)
 
+    def test__initEmpty_name(self):
+        with self.assertRaises(ValueError):
+            Player(self.deck, '' , 10)
+
+    def test__initNameNotString(self):
+        with self.assertRaises(ValueError):
+            Player(self.deck,5)
+
+    def test__initNumberZero(self):
+        with self.assertRaises(ValueError):
+            Player(self.deck,'Oz', 0)
+
+    def test__initNegativeNumber(self):
+        with self.assertRaises(ValueError):
+            Player(self.deck, 'Oz', -1)
 
     def test__init__fullpack(self):
         self.assertEqual(len(self.deck.pack), 52) # בדיקה האם החפיסה של המשחק מלאה בכל הקלפים
