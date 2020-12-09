@@ -25,7 +25,7 @@ for i in range(10):
     time.sleep(2)
 game.player1.show()
 game.player2.show()
-if game.get_winner()!=None:
+if game.get_winner() is not None:
     print(f"The winner is : {game.get_winner().name}!!!")
 else:
     print("There is no Winners, Just loosers! \nThe game ended in draw!")
